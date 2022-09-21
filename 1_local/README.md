@@ -9,5 +9,5 @@ First step is to make sure that we can run apps locally. For testing purposes an
 
 To run apps locally:
 
-1. Execute `./mvnw -DskipTests spring-boot:run`
-2. Open http://localhost:8080
+1. Execute `./mvnw -DskipTests spring-boot:run` (from withing App[x] folder)
+2. Open http://localhost:8080 and you should see `Java App [x] v0.1`

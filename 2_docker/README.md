@@ -17,3 +17,9 @@ Option 2:
 2. Build image: `docker build -t java_app1 .`
 3. Run app from container: `docker run -p 8080:8080 java_app1`
 4. Open http://localhost:8080 to validate that it works
+
+Extra:
+In the next step (Kubernetes deployment) we'll need this docker image to be available in some container registry. For tests I used my dockerhub account and pushed the image there as follows:
+
+1. `docker tag java_app1:latest davezworka/java_app1:0.1`
+2. `docker push davezworka/java_app1:0.1`
